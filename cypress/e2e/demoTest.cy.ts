@@ -6,7 +6,7 @@ describe('Verify login process and check if homepage is displayed', () => {
 
     loginpage.visitLoginPage();
     
-    loginpage.login('test', 'test');
+    loginpage.login('TestLogin', 'TestPassword');
 
     homepage.checkIfHomepageIsDisplayed();
 
