@@ -1,6 +1,6 @@
 class HomePage {
-    private homepageDisplayVerificator: string = '#accountTable';
-    private logoutButton: string = 'a[href*="logout"]';
+    private homepageDisplayVerificator: string = ".features_items";
+    private logoutButton: string = "a[href='/logout']";
   
     checkIfHomepageIsDisplayed() {
       cy.get(this.homepageDisplayVerificator).should('be.visible');

@@ -1,10 +1,10 @@
 class LoginPage {
-    private usernameInput: string = 'input[name="username"]';
-    private passwordInput: string = 'input[name="password"]';
-    private loginButton: string = 'input[type="submit"]';
+    private usernameInput: string = "input[data-qa='login-email']";
+    private passwordInput: string = "input[data-qa='login-password']";
+    private loginButton: string = "button[data-qa='login-button']";
   
     visitLoginPage() {
-      cy.visit('https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC');
+      cy.visit('https://automationexercise.com/login');
     }
   
     fillUsername(username: string) {
